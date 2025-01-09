@@ -1,13 +1,16 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <errno.h>
 
 // definitions
 void readInput(char* input_char){
 
      while (1) {
        
-        read(STDIN_FILENO, input_char, 1);
+        if(read(STDIN_FILENO, input_char, 1) == -1 && errno != EAGAIN) 
+            die("Error reading input!");
+
         if (iscntrl(*input_char)) {
             printf("%d\r\n", *input_char);
         } 
