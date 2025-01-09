@@ -1,2 +1,2 @@
-# Code-Editor-in-C
-Terminal based code editor written in c
+# Ceditor
+Ceditor (C- Editor) is a c based terminal code editor.
