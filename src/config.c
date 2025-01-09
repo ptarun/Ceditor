@@ -1,7 +1,13 @@
 #include <termios.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <errno.h>
+
+
+
+
+
 
 // variable to store original terminal state
 struct termios original_termios;

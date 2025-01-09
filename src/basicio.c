@@ -1,7 +1,9 @@
+#include <ctype.h>
 #include <unistd.h>
 #include <stdio.h>
-#include <ctype.h>
 #include <errno.h>
+#include "config.h"
+
 
 // definitions
 void readInput(char* input_char){
